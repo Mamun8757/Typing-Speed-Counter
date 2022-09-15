@@ -1,7 +1,3 @@
-// const btnClicked = document.getElementById('blog-btn').addEventListener('click', function(){
-//   window.location.href = 'blogs/blog.html';
-// })
-
 const display = document.getElementById("display");
 const question = document.getElementById("question");
 const startBtn = document.getElementById("start");
@@ -71,8 +67,8 @@ const gameOver = () => {
   // the current time is the finish time
   // so total time taken is current time - start time
   const finishTime = new Date().getTime();
-  const timeTaken = (finishTime - startTime) / 1000;
-
+  const timeTaken = Math.floor((finishTime - startTime) / 1000);
+  
   // show result modal
   resultModal.innerHTML = "";
   resultModal.classList.toggle("hidden");
@@ -137,8 +133,15 @@ displayHistory();
 // Show typing time spent
 setInterval(() => {
   const currentTime = new Date().getTime();
-  const timeSpent = (currentTime - startTime) / 1000;
-
+  const timeSpent = Math.floor((currentTime - startTime) / 1000);
 
   document.getElementById("show-time").innerHTML = `${startTime ? timeSpent : 0} seconds`;
 }, 1000);
+
+
+//Blog page button connection
+/*
+const btnClicked = document.getElementById('blog-btn').addEventListener('click', function(){
+  window.location.href = 'blogs/blog.html';
+})
+*/
