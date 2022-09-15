@@ -1,3 +1,7 @@
+// const btnClicked = document.getElementById('blog-btn').addEventListener('click', function(){
+//   window.location.href = 'blogs/blog.html';
+// })
+
 const display = document.getElementById("display");
 const question = document.getElementById("question");
 const startBtn = document.getElementById("start");
