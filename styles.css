@@ -92,6 +92,7 @@ body {
 }
 .inactive {
   border: 2px solid white !important;
+  
 }
 .hidden {
   display: none;
@@ -198,4 +199,13 @@ button {
       gap: 10px;
       margin-bottom: 50px;
     }
+  .bold {
+    margin-right: 10px;
+
+  }
+  .inactive::after{
+    overflow-x: hidden;
+  }
 }
+
+

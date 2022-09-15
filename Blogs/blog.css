@@ -1,0 +1,9 @@
+@media only screen and (max-width: 568px){
+    #blog-header{
+        font-size: 36px;
+    }
+    .article-space{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
