@@ -59,6 +59,7 @@ const validate = (key) => {
     return true;
   }
   return false;
+  
 };
 
 // FINISHED TYPING
@@ -138,6 +139,11 @@ setInterval(() => {
   document.getElementById("show-time").innerHTML = `${startTime ? timeSpent : 0} seconds`;
 }, 1000);
 
+//Clear Button
+const clearHistory = document.getElementById('historyClear').addEventListener('click', function(){
+  localStorage.clear();
+  
+})
 
 //Blog page button connection
 /*
