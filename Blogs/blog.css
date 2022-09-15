@@ -1,3 +1,12 @@
+body{
+    background-color: #3D4451;
+}
+.highlight{
+    font-weight: 700;
+    color: #87ceeb;
+    font-size: 20px;
+}
+
 @media only screen and (max-width: 568px){
     #blog-header{
         font-size: 36px;
