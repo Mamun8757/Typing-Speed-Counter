@@ -6,8 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Blogs</title>
     <link rel="stylesheet" href="blog.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    
+<body class="bg-zinc-900 text-white">
+    <header>
+        <h1 class="text-center m-5 text-5xl font-mono text-white">welcome to my blogs</h1>
+    </header>
+    <main class="grid grid-cols-1 gap-4 max-w-5xl mx-auto">
+        <div class=" border-2 border-gray-50 rounded hover:bg-sky-700 p-4">
+            <h2 class="text-3xl mb-4">Local Storage vs Session Storage</h2>
+            <p>
+                sessionStorage is similar to localStorage ; the difference is that while data in localStorage doesn't expire, data in
+                sessionStorage is cleared when the page session ends.
+            </p>
+        </div>
+        <div class=" border-2 border-gray-50 rounded hover:bg-sky-700 p-4">
+            <h2 class="text-3xl mb-4">Block Scope vs Global Scope</h2>
+            <p>
+                <span class="text-orange-600 text-2xl">Global Scope</span><br> Global ascope means that the variables can be accessed from any part of that program, any function or conditional state
+                can access that variable.<br>
+                <span class="text-orange-600 text-2xl">Block Scope</span> <br> Block scope is also a sub-type of local scope. The block scope can be defined as the scope of the variables inside the
+                curly brackets {}. Now, these curly brackets can be of loops, or conditional statements, or something else. You are only
+                allowed to refer to these variables from within the curly brackets {}. 
+                The keywords let and const are used to define block variables.
+            </p>
+        </div>
+        <div class=" border-2 border-gray-50 rounded hover:bg-sky-700 p-4">
+            <h2 class="text-3xl mb-4">How to work Js Event Loop?</h2>
+            <p>
+                The Event Loop has one simple job — to monitor the Call Stack and the Callback Queue. If the Call Stack is empty, the
+                Event Loop will take the first event from the queue and will push it to the Call Stack, which effectively runs it. Such
+                an iteration is called a tick in the Event Loop.
+            </p>
+        </div>
+        <div class=" border-2 border-gray-50 rounded hover:bg-sky-700 p-4 mb-5">
+            <h2 class="text-3xl mb-4">How many way we can get undefined value in js?</h2>
+            <p>
+                Undefined is a property of the global object. It is one of JavaScript's primitive types.<br>
+                When a variable that has not been assigned a value is of type undefined. A method or statement also returns undefined if the
+                variable that is being evaluated does not have an assigned value. A function returns undefined if a value was not
+                returned.
+
+            </p>
+        </div>
+    </main>
 </body>
 </html>
