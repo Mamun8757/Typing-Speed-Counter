@@ -149,6 +149,6 @@ const clearHistory = document.getElementById('historyClear').addEventListener('c
 //Blog page button connection
 /*
 const btnClicked = document.getElementById('blog-btn').addEventListener('click', function(){
-  window.location.href = 'blogs/blog.html';
+  window.location.href = 'blog.html';
 })
 */
